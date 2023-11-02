@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Verkefni 8: Vefverslunarkarfa</title>
+  <script src="main.js" type="module" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="products">
+      <h2>Vörur</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Heiti</th>
+            <th>Lýsing</th>
+            <th>Verð</th>
+            <th>Bæta við körfu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-product-id="1">
+            <td>HTML húfa</td>
+            <td>Húfa sem heldur hausnum heitum og hvíslar hugsanlega að þér hvaða element væri best að nota.</td>
+            <td><span class="price">5.000 kr.-</span></td>
+            <td>
+              <form class="add" method="post">
+                <label>Fjöldi: <input type="number" value="1" min="0" max="99"></label>
+                <button>Bæta við</button>
+              </form>
+            </td>
+          </tr>
+          <tr data-product-id="2">
+            <td>CSS sokkar</td>
+            <td>Sokkar sem skalast vel með hvaða fótum sem er.</td>
+            <td><span class="price">3.000 kr.-</span></td>
+            <td>
+              <form class="add" method="post">
+                <label>Fjöldi: <input type="number" value="1" min="0" max="99"></label>
+                <button>Bæta við</button>
+              </form>
+            </td>
+          </tr>
+          <tr data-product-id="3">
+            <td>JavaScript jakki</td>
+            <td>Mjög töff jakki fyrir öll sem skrifa JavaScript reglulega.</td>
+            <td><span class="price">20.000 kr.-</span></td>
+            <td>
+              <form class="add" method="post">
+                <label>Fjöldi: <input type="number" value="1" min="0" max="99"></label>
+                <button>Bæta við</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Karfa</h2>
+      <div class="cart">
+        <p class="empty-message">Ekkert í körfu.</p>
+        <div class="cart-content hidden">eitthvað í körfu.</div>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Heiti</th>
+            <th>Fjöldi</th>
+            <th>Verð</th>
+            <th>Samtals</th>
+            <th>Eyða</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Samtals</td>
+            <td><span class="price">0 kr.-</span></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      </div>
+
+      <form method="post">
+        <div class="form-field">
+          <label for="name">Nafn:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-field">
+          <label for="address">Heimilisfang:</label>
+          <input type="text" name="address" id="address">
+        </div>
+        <button>Ganga frá kaupum</button>
+      </form>
+
+    </section>
+    <section class="receipt">
+      <h2>Kvittun</h2>
+      <p>Takk fyrir að versla hjá okkur!</p>
+      <p><a href=".">Kaupa meira</a>.</p>
+    </section>
+  </main>
+</body>
+
+</html>

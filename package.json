@@ -1,0 +1,24 @@
+{
+    "name": "vef1-2023-v8-synilausn",
+    "version": "1.0.0",
+    "description": "[Sýnilausn á verkefni 8](https://github.com/vefforritun/vef1-2023-v8).",
+    "main": "main.js",
+    "scripts": {
+        "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+        "copy:html": "cpy ./*.html ./build/",
+        "copy:js": "cpy ./*.js ./build/",
+        "build": "concurrently npm:copy:*"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.29.3",
+        "concurrently": "^8.2.1",
+        "cpy-cli": "^5.0.0",
+        "stylelint": "^15.11.0"
+    },
+    "dependencies": {
+        "sass": "^1.69.5"
+    }
+}
